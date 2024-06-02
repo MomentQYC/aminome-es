@@ -20,7 +20,7 @@
 
 ## 使用方法
 
-1. 安装 Python 包
+1. 安装 Python 包。
 
     ```sh
     pip3 install -r requirements.txt
@@ -28,7 +28,7 @@
 
 3. 打开 `aminome-es.py` 并将 `postgresql config` 和 `elasticsearch config` 更改为正确的值。
 
-4. 执行
+4. 执行。
 
     ```sh
     python3 ./aminome.py
