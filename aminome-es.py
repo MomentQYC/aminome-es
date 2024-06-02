@@ -4,7 +4,7 @@ import orjson
 from elasticsearch import Elasticsearch, helpers
 from datetime import datetime
 
-# PostgreSQL 配置
+# PostgreSQL config
 db = psycopg2.connect(
     host='localhost',
     user='misskey-user',
@@ -14,7 +14,7 @@ db = psycopg2.connect(
     cursor_factory=psycopg2.extras.DictCursor
 )
 
-# Elasticsearch 配置
+# Elasticsearch config
 es_url = "http://localhost:9200"
 index = ""
 es_username = "elastic_user"  # 替换为你的Elasticsearch用户名
