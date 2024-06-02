@@ -1,5 +1,5 @@
 # aminome-es
-Add all misskey notes to Elasticsearch
+Add all Misskey notes to Elasticsearch
 
 [中文版本](README_CN.md)
 
