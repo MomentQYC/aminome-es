@@ -17,8 +17,8 @@ db = psycopg2.connect(
 # Elasticsearch config
 es_url = "http://localhost:9200"
 index = ""
-es_username = "elastic_user"  # 替换为你的Elasticsearch用户名
-es_password = "elastic_pwd"  # 替换为你的Elasticsearch密码
+es_username = "elastic_user"  # Your Elasticsearch Username
+es_password = "elastic_pwd"  # Your Elasticsearch Password
 
 es = Elasticsearch(es_url,
     basic_auth=(es_username, es_password)
