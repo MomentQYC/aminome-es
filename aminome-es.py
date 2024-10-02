@@ -18,6 +18,7 @@ db = psycopg2.connect(
 
 # Elasticsearch config
 es_url = "http://localhost:9200"
+index_p = ""
 es_username = "elastic_user"  # Your Elasticsearch Username
 es_password = "elastic_pwd"  # Your Elasticsearch Password
 
@@ -45,7 +46,7 @@ else:
 
 def generate_index_name(batch_count):
     # e.g., "---notes-202410-1", "---notes-202410-2", etc.
-    index_base = "---notes" + "-" + datetime.now().strftime("%Y%m")
+    index_base = index_p + "---notes" + "-" + datetime.now().strftime("%Y%m")
     return index_base + f"-{batch_count // batch_limit + 1}"
 
 index = generate_index_name(batch_count)
